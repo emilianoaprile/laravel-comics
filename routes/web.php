@@ -125,5 +125,9 @@ Route::get('/', function () {
             "type" => "graphic novel",
         ]
     ];
-    return view('index', $comics);
+
+    return view('index', compact('comics'));
 })->name('home');
+
+
+
