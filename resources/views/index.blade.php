@@ -9,9 +9,12 @@
   <div class="container">
     <div class="row">
         @foreach ($comics as $comic)
-            <div class="col-2">{{ $comic['series'] }}</div>
+            <div class="col-2 p-3">
+                <img src="{{ $comic['thumb'] }}" alt="" class="comic-img">
+                {{ $comic['series'] }}
+            </div>
+            
         @endforeach
-    
     </div>
   </div>
 </section>
@@ -20,4 +23,4 @@
 
 @section('title')
 Home Page
-@endsection
+@endsection 

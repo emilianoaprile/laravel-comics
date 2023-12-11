@@ -20,6 +20,9 @@
 {{-- header --}}
 @include('partials.header')
 
+{{-- Hero --}}
+@include('partials.hero')
+
     <main class="bg-light">
         @yield('content')
     </main>
